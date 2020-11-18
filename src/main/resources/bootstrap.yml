@@ -1,0 +1,16 @@
+---
+spring:
+  application:
+    name: ms-service
+  cloud:
+    config:
+      name: ms-service
+      password: admin
+      server:
+        bootstrap: true
+      uri: "http://localhost:8090"
+      username: admin
+  profiles:
+    active:
+      - dev
+
